@@ -3,7 +3,7 @@ filetype off
 
 " PLUGINS:
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin('~/.vim/bundle/Vundle.vim')
+call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'           " Vundle Plugin manager
 Plugin 'rakr/vim-one' 			" Atom one colorscheme
 Plugin 'tpope/vim-surround'		" surround modifier
