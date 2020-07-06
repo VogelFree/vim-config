@@ -32,6 +32,9 @@ set autochdir
 set noerrorbells
 set undodir=~/.vim/undodir
 set undofile
+set nowrap
+set colorcolumn=80
+highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 " COLORSCHEME
 set background=dark
