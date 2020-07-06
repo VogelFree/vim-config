@@ -56,6 +56,12 @@ nnoremap <C-F> <ESC>:40vs .<CR>
 
 nnoremap <leader><Tab> <ESC>:tabnext<Enter>
 nnoremap <C-Tab> <ESC>:tabprev<Enter>
+
+nnoremap <leader>h :wincmd h<CR>
+nnoremap <leader>j :wincmd j<CR>
+nnoremap <leader>k :wincmd k<CR>
+nnoremap <leader>l :wincmd l<CR>
+
 nnoremap <F5> <ESC>:!dotnet fsi %:p<Enter>
 
 " FILE SYNTAX
