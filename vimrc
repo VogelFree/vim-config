@@ -30,6 +30,8 @@ set nofoldenable
 set directory^=~/.vim/tmp//
 set autochdir
 set noerrorbells
+set undodir=~/.vim/undodir
+set undofile
 
 " COLORSCHEME
 set background=dark
