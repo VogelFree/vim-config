@@ -53,6 +53,9 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 let mapleader = " "
 
 nnoremap <C-F> <ESC>:40vs .<CR>
+
+nnoremap <leader><Tab> <ESC>:tabnext<Enter>
+nnoremap <C-Tab> <ESC>:tabprev<Enter>
 nnoremap <F5> <ESC>:!dotnet fsi %:p<Enter>
 
 " FILE SYNTAX
