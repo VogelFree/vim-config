@@ -48,6 +48,10 @@ let g:netrw_altv=1
 let g:netrw_liststyle=3
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+
+" SHORTCUTS
+let mapleader = " "
+
 nnoremap <C-F> <ESC>:40vs .<CR>
 nnoremap <F5> <ESC>:!dotnet fsi %:p<Enter>
 
