@@ -29,6 +29,7 @@ set foldmethod=syntax
 set nofoldenable
 set directory^=~/.vim/tmp//
 set autochdir
+set noerrorbells
 
 " COLORSCHEME
 set background=dark
