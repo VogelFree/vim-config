@@ -13,6 +13,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'rakr/vim-one'
 Plugin 'autozimu/LanguageClient-neovim'
 Plugin 'ionide/Ionide-vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'mbbill/undotree'
+Plugin 'vim-airline/vim-airline'
 
 call vundle#end()
 
