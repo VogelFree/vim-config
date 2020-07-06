@@ -1,6 +1,3 @@
-" Shortcuts
-" strg+f open file browser
-"
 set nocompatible
 filetype off
 
