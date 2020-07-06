@@ -64,6 +64,8 @@ nnoremap <leader>l :wincmd l<CR>
 
 nnoremap <leader>u :UndotreeShow<CR>
 
+nmap <leader>g :G<CR>
+
 nnoremap <F5> <ESC>:!dotnet fsi %:p<Enter>
 
 " FILE SYNTAX
