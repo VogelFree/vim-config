@@ -43,3 +43,17 @@ endfunction
 
 " [[ Statusline ]]
 set statusline+=%{GitStatus()}
+
+" [[ Templates ]]
+function LoadTemplate()
+	silent! execute '0r ~/.vim/templates/skeleton.'.expand("<afile>:e")
+	" Placeholder {%FILENAME%} with current filename
+	%s/{%FILENAME%}/\=expand("%:t:r")/g
+endfunction
+
+autocmd BufNewFile *.* call LoadTemplate()
+nnoremap <Plug>GoToNextPlaceholder :call search('{%[^%]*%}')<CR>va{
+imap <silent> <C-q><C-e> <C-v><C-a><C-]><Esc><Plug>GoToNextPlaceholder
+nmap <silent> <C-q><C-q> <Plug>GoToNextPlaceholder
+imap <silent> <C-q><C-q> <Esc><Plug>GoToNextPlaceholder
+vmap <silent> <C-q><C-q> <Esc><Plug>GoToNextPlaceholder
