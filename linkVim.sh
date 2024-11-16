@@ -1,5 +1,6 @@
-BASEDIR=$(dirname "$0")
-DOTVIM=$BASEDIR/vimfiles
-VIMFILES=$HOME/.vim
+SCRIPTFILE=$(realpath $0)
+BASEDIR=$(dirname $SCRIPTFILE)
+VIMFILES=$BASEDIR/vimfiles
+DOTVIM=$HOME/.vim
 echo "Link ${VIMFILES} to ${DOTVIM}"
-ln -s $DOTVIM $VIMFILES
+ln -s $VIMFILES $DOTVIM
