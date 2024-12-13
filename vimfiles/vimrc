@@ -49,9 +49,10 @@ set statusline+=%{GitStatus()}
 
 " [[ Templates ]]
 function LoadTemplate()
-	silent! execute '0r ~/.vim/templates/skeleton.'.expand("<afile>:e")
+	let l:template = g:vimfiles .'/templates/skeleton.'.expand("<afile>:e")
+	silent! execute '0r '. l:template
 	" Placeholder {%FILENAME%} with current filename
-	%s/{%FILENAME%}/\=expand("%:t:r")/g
+	silent %s/{%FILENAME%}/\=expand("%:t:r")/g
 endfunction
 
 autocmd BufNewFile *.* call LoadTemplate()
