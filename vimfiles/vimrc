@@ -65,3 +65,7 @@ imap <silent> <C-q><C-e> <C-v><C-a><C-]><Esc><Plug>GoToNextPlaceholder
 nmap <silent> <C-q><C-q> <Plug>GoToNextPlaceholder
 imap <silent> <C-q><C-q> <Esc><Plug>GoToNextPlaceholder
 vmap <silent> <C-q><C-q> <Esc><Plug>GoToNextPlaceholder
+
+augroup filetypedetect
+	  au! BufRead,BufNewFile docker-compose*.yml compiler docker-compose
+augroup END
