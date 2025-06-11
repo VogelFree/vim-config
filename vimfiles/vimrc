@@ -8,6 +8,7 @@ call plug#begin(vimfiles.'/plugged')
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'DrTom/fsharp-vim'
+Plug 'skanehira/preview-uml.vim'
 call plug#end()
 
 " Activate Editorconfig builtin plugin
